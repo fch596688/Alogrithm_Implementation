@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Alogrithm_Implementation.iml" filepath="$PROJECT_DIR$/Alogrithm_Implementation.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/DataStructure.iml" filepath="$PROJECT_DIR$/DataStructure/DataStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/queue.iml" filepath="$PROJECT_DIR$/DataStructure/queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
 </project>
