@@ -4,11 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Alogrithm_Implementation.iml" filepath="$PROJECT_DIR$/Alogrithm_Implementation.iml" />
       <module fileurl="file://$PROJECT_DIR$/ArrayAndString/ArrayAndString.iml" filepath="$PROJECT_DIR$/ArrayAndString/ArrayAndString.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BFS/BFS.iml" filepath="$PROJECT_DIR$/BFS/BFS.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructure/DataStructure.iml" filepath="$PROJECT_DIR$/DataStructure/DataStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
       <module fileurl="file://C:\Users\fch59\IdeaProjects\Alogrithm_Implementation\DataStructure\queue.iml" filepath="C:\Users\fch59\IdeaProjects\Alogrithm_Implementation\DataStructure\queue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sorting/sorting.iml" filepath="$PROJECT_DIR$/sorting/sorting.iml" />
       <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
     </modules>
   </component>
