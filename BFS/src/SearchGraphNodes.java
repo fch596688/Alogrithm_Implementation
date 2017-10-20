@@ -1,13 +1,8 @@
 import java.util.*;
 
+//Key point: graph-bfs
 public class SearchGraphNodes {
-    class UndirectedGraphNode {
-      int label;
-          ArrayList<UndirectedGraphNode> neighbors;
-          UndirectedGraphNode(int x) {
-             label = x; neighbors = new ArrayList<UndirectedGraphNode>();
-        }
-    };
+
     public UndirectedGraphNode searchNodes(ArrayList<UndirectedGraphNode> graph,
                                            Map<UndirectedGraphNode, Integer> values,
                                            UndirectedGraphNode node,

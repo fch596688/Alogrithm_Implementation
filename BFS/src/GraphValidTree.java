@@ -4,8 +4,16 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), write a function to check whether these edges make up a valid tree.
+ * Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes),
+ * write a function to check whether these edges make up a valid tree.
+ * Example Given n = 2, prerequisites = [[1,0]]
+ * Return [0,1]
+ * Given n = 4, prerequisites = [1,0],[2,0],[3,1],[3,2]]
+ * Return [0,1,2,3] or [0,2,1,3]
  */
+//Key point: initialize graph and graph bfs,
+// tree: 1. n - 1 == edges.length
+//       2. we can traverse from root node to all nodes
 public class GraphValidTree {
 
     public boolean validTree(int n, int[][] edges) {
@@ -20,7 +28,7 @@ public class GraphValidTree {
         //initialize graph
         HashMap<Integer, HashSet<Integer>> graph = initializeGraph(n, edges);
         //then, we need to make sure all the node connected through traverse graph by BFS
-        // BFS
+        // BFS-graph
         //queue to store all nodes of each level
         Queue<Integer> queue = new LinkedList<>();
         //Nodes can be traversed from start node
@@ -32,6 +40,7 @@ public class GraphValidTree {
 
         while (!queue.isEmpty()) {
             int node = queue.poll();
+            //neighbors are actually nodes in next level
             for (Integer neighbor : graph.get(node)) {
                 if (traversedNodeSet.contains(neighbor)) {
                     continue;

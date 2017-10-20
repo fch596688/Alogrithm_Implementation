@@ -1,11 +1,6 @@
 import java.util.*;
-
+//Key point: 1.count in-degree, 2.BFS- reduce in-degree neighbor
 public class TopologicalSorting {
-    class DirectedGraphNode {
-      int label;
-      ArrayList<DirectedGraphNode> neighbors;
-      DirectedGraphNode(int x) { label = x; neighbors = new ArrayList<DirectedGraphNode>(); }
-    };
     public ArrayList<DirectedGraphNode> topSort(ArrayList<DirectedGraphNode> graph) {
 
         ArrayList<DirectedGraphNode> result = new ArrayList<>();
@@ -21,10 +16,10 @@ public class TopologicalSorting {
             }
         }
 
-        //2. bfs - find the start node
+        //2. bfs -
         Queue<DirectedGraphNode> queue = new LinkedList<>();
 
-
+        //find the node whose in-degree equals 0;
         for(DirectedGraphNode node: graph){
             if(!map.containsKey(node)){
                 queue.offer(node);
