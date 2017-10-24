@@ -1,7 +1,7 @@
 import java.util.*;
 public class SubarraySum {
     //Time Complexity: O(n * n);
-    public List<Integer> subarraySum(int[] nums) {
+    public List<Integer> subarraySum1(int[] nums) {
         List<Integer> result = new ArrayList<>();
         int startIndex = 0;
         int sum = 0;
@@ -28,6 +28,28 @@ public class SubarraySum {
     }
 
     //Time Complexity: O(n) Space Complexity: O(n)
+    public List<Integer> subarraySum(int[] nums) {
+        List<Integer> result = new ArrayList<>();
+        if (nums == null || nums.length == 0) {
+            return result;
+        }
 
+        int sum = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        map.put(sum, -1);
+
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+            if (map.containsKey(sum)) {
+                result.add(map.get(sum) + 1);
+                result.add(i);
+                return result;
+            }
+
+            map.put(sum, i);
+        }
+
+        return result;
+    }
 
 }
